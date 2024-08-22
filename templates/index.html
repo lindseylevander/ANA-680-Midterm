@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Race Prediction</title> 
+</head> 
+<body> 
+<form action="/predict" autocomplete="on" method="POST"> 
+math_score: <input type="number" name="math_score"><br>
+reading_score: <input type="number" name="reading_score"><br> 
+writing_score: <input type="number" name="writing_score"><br> 
+<button type="submit">Predict</button> 
+</form> 
+<p>My prediction: {{ prediction }}</p> 
+</body> 
+</html>
